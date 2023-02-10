@@ -9,3 +9,6 @@ It will remove a strike for any torrent with a "Downloading" status
 For any torrent that reaches 3 strikes, it will send an API call to sonarr to remove the problem torrent and add it to the blocklist.
 
 This will also trigger a new search for the same eppisode.
+
+
+Dont forget to add your Sonarr API key to the .py file
