@@ -11,4 +11,4 @@ For any torrent that reaches 3 strikes, it will send an API call to sonarr to re
 This will also trigger a new search for the same eppisode.
 
 
-Dont forget to add your Sonarr API key to the .py file
+Dont forget to add your Sonarr API key.
