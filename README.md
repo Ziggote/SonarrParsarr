@@ -12,3 +12,6 @@ This will also trigger a new search for the same eppisode.
 
 
 Dont forget to add your Sonarr API key.
+
+I added this as a task in Task Scheduler to run every 10 minutes.
+If you are having issues with the Task Scheduler not running the script, Make sure the CSV file is in the same directory as the script.  
