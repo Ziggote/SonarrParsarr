@@ -1,5 +1,6 @@
 import requests
 import csv
+import os
 
 # API key & endpoint
 api_key = "Your-API-Key"
@@ -12,7 +13,10 @@ if response.status_code == 200:
     # Keep track of strikes for each torrent
     strikes = {}
 
-    with open("sonarTestarrInfo.csv", "w") as file:
+    if not os.path.isfile("sonarTestarrInfo.csv"):
+        open('sonarTestarrInfo.csv', 'w').close()
+
+    with open("sonarTestarrInfo.csv", "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
             # Read the existing strikes for each torrent from the file
